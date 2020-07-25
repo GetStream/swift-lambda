@@ -1,0 +1,5 @@
+.build
+.swiftpm
+.serverless
+.DS_Store
+node_modules
