@@ -4,7 +4,7 @@
 [![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FGetStream%2Fswift-lambda)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FGetStream%2Fswift-lambda)
 [![Twitter Follow](https://img.shields.io/twitter/follow/getstream_io?style=social)](https://twitter.com/intent/follow?screen_name=getstream_io)
 
-This project contains configuration files and scripts to fully automate deploying an HTTP service written in Swift to AWS in a matter of seconds using the Serverless Framework. Build with 💘 by the folks @ [Stream](https://getstream.io).
+This project is a starting point for writing an HTTP service in Swift. It contains configuration files and scripts to fully automate deploying to AWS in a matter of seconds using the Serverless Framework. Built with 💘 by the folks @ [Stream](https://getstream.io).
 
 Based on samples and documentation from [swift-server/swift-aws-lambda-runtime](https://github.com/swift-server/swift-aws-lambda-runtime)
 
