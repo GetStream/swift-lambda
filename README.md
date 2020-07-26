@@ -18,4 +18,4 @@ Write your code in [`Sources/Lambda/main.swift`](Sources/Lambda/main.swift).
 
 ### 🚀 Deploy
 
-To deploy, run `./Scripts/deploy.sh` in the root folder.
+Deploy by running `./Scripts/deploy.sh` from this project's root folder.
