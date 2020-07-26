@@ -6,6 +6,8 @@
 
 This project contains configuration files and scripts to fully automate deploying an HTTP service written in Swift to AWS in a matter of seconds using the Serverless Framework. Build with 💘 by the folks @ [Stream](https://getstream.io).
 
+Based on samples and documentation from [swift-server/swift-aws-lambda-runtime](https://github.com/swift-server/swift-aws-lambda-runtime)
+
 ## ⚙️ Getting started
 
 ### ✅ Requirements
