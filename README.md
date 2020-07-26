@@ -9,8 +9,9 @@ This repository contains configuration files and scripts to fully automate deplo
 ## ⚙️ Getting started
 
 ### ✅ Requirements
+- [Docker](https://docs.docker.com/docker-for-mac/install/)
+- [Serverless Framework](https://www.serverless.com/framework/docs/getting-started/)
 - [AWS account](https://aws.amazon.com/)
-- [Install Serverless Framework](https://www.serverless.com/framework/docs/getting-started/)
 
 ### ✍️ Write your function
 
