@@ -10,10 +10,10 @@ Built with 💘 by the folks @ [Stream](https://getstream.io).
 
 ## ⚙️ Getting started
 
-### ✅ Requirements
+### ✅ Prerequisites
 - [Docker](https://docs.docker.com/docker-for-mac/install/)
 - [Serverless Framework](https://www.serverless.com/framework/docs/getting-started/)
-- [AWS account](https://aws.amazon.com/)
+- [AWS Credentials](https://www.serverless.com/framework/docs/providers/aws/guide/credentials/)
 
 ### ✍️ Write your function
 
