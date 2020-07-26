@@ -1,6 +1,6 @@
 # Swift Lambda λ
 
-This repository is a great starting point to write an HTTP service in Swift and deploy it in seconds to AWS Lambda using the Serverless Framework. It contains the configuration files and scripts required to fully automate the process.
+This repository is a great starting point to write an HTTP service in Swift and deploy it in seconds to AWS using the Serverless Framework. It contains the configuration files and scripts required to fully automate the process.
 
 ## ⚙️ Getting started
 
