@@ -13,6 +13,6 @@ struct APIGatewayProxyLambda: EventLoopLambdaHandler {
 
     public func handle(context: Lambda.Context, event: APIGateway.Request) -> EventLoopFuture<APIGateway.Response> {
         context.logger.debug("hello, api gateway!")
-        return context.eventLoop.makeSucceededFuture(APIGateway.Response(statusCode: .ok, headers: ["Content-Type": "text/html"], body: "<h2> Hello, World! 💘 Swift 5.2 running on AWS </h2>"))
+        return context.eventLoop.makeSucceededFuture(APIGateway.Response(statusCode: .ok, body: "Hello, world!"))
     }
 }
