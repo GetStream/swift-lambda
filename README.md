@@ -24,8 +24,8 @@ Write your code in [`Sources/Lambda/main.swift`](Sources/Lambda/main.swift).
 
 ### 🚀 Deploy
 
-Deploy by running `./Scripts/deploy.sh`.
+Run `./Scripts/deploy.sh`.
 
 ### 🔎 Verify
 
-Verify that your service is running by opening the output URL in your browser.
+Open the output URL in your browser.
