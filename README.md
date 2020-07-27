@@ -9,7 +9,7 @@ This project is a starting point for writing an HTTP service in Swift. It contai
 Built with 💘 by the folks @ [Stream](https://getstream.io).
 
 
-<img align="right" src="https://i.imgur.com/FocTSMk.png" width="60%" />
+<img align="right" src="https://i.imgur.com/dSz1pYT.png" width="60%" />
 
 ## ⚙️ Getting started
 
@@ -30,4 +30,4 @@ Deploy by running `./Scripts/deploy.sh`.
 
 Verify that your service is running by opening the output URL in your browser.
 
-![](https://i.imgur.com/dSz1pYT.png)
+<img align="center" src="https://i.imgur.com/FocTSMk.png" width="60%" />
