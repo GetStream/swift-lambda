@@ -29,3 +29,56 @@ Run `./Scripts/deploy.sh`.
 ### 🔎 Verify
 
 Open the output URL in your browser.
+
+And done!
+
+## 👩‍💻 Developing
+
+There is some code already present in the `Sources/Lambda/main.swift` file. It simply outputs "Hello, world!" in plain text.
+
+```swift
+import AWSLambdaEvents
+import AWSLambdaRuntime
+import NIO
+
+// MARK: - Run Lambda
+Lambda.run(APIGatewayProxyLambda())
+
+// MARK: - Handler, Request and Response
+// FIXME: Use proper Event abstractions once added to AWSLambdaRuntime
+struct APIGatewayProxyLambda: EventLoopLambdaHandler {
+    public typealias In = APIGateway.Request
+    public typealias Out = APIGateway.Response
+
+    public func handle(context: Lambda.Context, event: APIGateway.Request) -> EventLoopFuture<APIGateway.Response> {
+        context.logger.debug("hello, api gateway!")
+        return context.eventLoop.makeSucceededFuture(APIGateway.Response(statusCode: .ok, body: "Hello, world!"))
+    }
+}
+```
+
+If you want to output some HTML, just set the "Content-Type" header to "text/html; charset=UTF-8"
+
+```swift
+...
+return context.eventLoop.makeSucceededFuture(APIGateway.Response(
+    statusCode: .ok,
+    headers: ["Content-Type": "text/html; charset=UTF-8"],
+    body: """
+          <p align="center">
+            <h2 align="center"> Hello, world! From Swift 5.2 💘 </h2>
+          </p>
+          <hl/>
+          <p align="center">\(event.requestContext.identity.userAgent ?? "")</p>
+          """)
+)
+...
+```
+
+![](https://i.imgur.com/CBWG1vG.png)
+
+For more information on the available settings and methods, refer to the [Swift AWS Lambda Runtime README](https://github.com/swift-server/swift-aws-lambda-runtime)
+
+## Contributing
+
+If you have a suggestion or bug report, please [file an issue in the Swift Lambda repository](https://github.com/GetStream/swift-lambda/issues/new). If you want to take a stab at contributing code, don't hesitate in submitting a PR.  Don't forget to leave a star if you liked it :)
