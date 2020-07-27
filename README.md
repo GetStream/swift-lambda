@@ -32,6 +32,8 @@ Open the output URL in your browser.
 
 And done!
 
+<hr />
+
 ## 👩‍💻 Developing
 
 There is some code already present in the `Sources/Lambda/main.swift` file. It simply outputs "Hello, world!" in plain text.
