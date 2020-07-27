@@ -9,7 +9,7 @@ This project is a starting point for writing an HTTP service in Swift. It contai
 Built with 💘 by the folks @ [Stream](https://getstream.io).
 
 
-<img align="right" src="https://i.imgur.com/xBHnC5P.png" width="60%" />
+<img align="right" src="https://i.imgur.com/FocTSMk.png" width="60%" />
 
 ## ⚙️ Getting started
 
