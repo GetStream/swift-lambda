@@ -83,7 +83,7 @@ For more information on the available settings and methods, refer to the [Swift 
 
 ## 📡 Endpoint Settings
 
-To change some characteristics of your HTTP endpoint, such as the method expected, you should modify the [`serverless.yml`](https://github.com/GetStream/swift-lambda/blob/main/serverless.yml#L70-L72) file. For more information on the available parameters, refer to the [Serverless.yml Reference](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
+To change some characteristics of your HTTP endpoint, such as the method expected, you should modify the [`serverless.yml`](https://github.com/GetStream/swift-lambda/blob/main/serverless.yml#L70-L72) file. For more information on the available parameters, refer to the [Serverless.yml Reference](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/).
 
 ## Contributing
 
