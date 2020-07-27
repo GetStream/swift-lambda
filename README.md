@@ -8,6 +8,9 @@ This project is a starting point for writing an HTTP service in Swift. It contai
 
 Built with 💘 by the folks @ [Stream](https://getstream.io).
 
+
+<img align="right" src="https://i.imgur.com/xBHnC5P.png" width="60%" />
+
 ## ⚙️ Getting started
 
 ### ✅ Prerequisites
@@ -21,4 +24,10 @@ Write your code in [`Sources/Lambda/main.swift`](Sources/Lambda/main.swift).
 
 ### 🚀 Deploy
 
-Deploy by running `./Scripts/deploy.sh` from this project's root folder.
+Deploy by running `./Scripts/deploy.sh`.
+
+### 🔎 Verify
+
+Verify that your service is running by opening the output URL in your browser.
+
+![](https://i.imgur.com/dSz1pYT.png)
