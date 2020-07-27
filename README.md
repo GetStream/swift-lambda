@@ -6,10 +6,10 @@
 
 This project is a starting point for writing an HTTP service in Swift. It contains configuration files and scripts to fully automate deploying to AWS in a matter of seconds using the Serverless Framework. It is based on samples and documentation from [swift-server/swift-aws-lambda-runtime](https://github.com/swift-server/swift-aws-lambda-runtime)
 
-Built with 💘 by the folks @ [Stream](https://getstream.io).
-
-
 <img align="right" src="https://i.imgur.com/dSz1pYT.png" width="55%" />
+<img align="right" src="https://i.imgur.com/FocTSMk.png" width="55%" />
+
+Built with 💘 by the folks @ [Stream](https://getstream.io).
 
 ## ⚙️ Getting started
 
@@ -29,7 +29,3 @@ Deploy by running `./Scripts/deploy.sh`.
 ### 🔎 Verify
 
 Verify that your service is running by opening the output URL in your browser.
-
-<p align="center">
-<img src="https://i.imgur.com/FocTSMk.png" width="55%" />
-</p>
