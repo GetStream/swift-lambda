@@ -30,4 +30,6 @@ Deploy by running `./Scripts/deploy.sh`.
 
 Verify that your service is running by opening the output URL in your browser.
 
-<img align="center" src="https://i.imgur.com/FocTSMk.png" width="60%" />
+<p align="center">
+<img src="https://i.imgur.com/FocTSMk.png" width="60%" />
+</p>
