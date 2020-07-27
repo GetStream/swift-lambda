@@ -81,6 +81,10 @@ return context.eventLoop.makeSucceededFuture(APIGateway.Response(
 
 For more information on the available settings and methods, refer to the [Swift AWS Lambda Runtime README](https://github.com/swift-server/swift-aws-lambda-runtime)
 
+## 📡 Endpoint Settings
+
+To change some characteristics of your HTTP endpoint, such as the method expected, you should modify the [`serverless.yml`](https://github.com/GetStream/swift-lambda/blob/main/serverless.yml#L70-L72) file. For more information on the available parameters, refer to the [Serverless.yml Reference](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
+
 ## Contributing
 
 If you have a suggestion or bug report, please [file an issue in the Swift Lambda repository](https://github.com/GetStream/swift-lambda/issues/new). If you want to take a stab at contributing code, don't hesitate in submitting a PR.  Don't forget to leave a star if you liked it :)
