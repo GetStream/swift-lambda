@@ -1,2 +1,2 @@
 sh ./Scripts/build-and-package.sh 
-serverless deploy
+serverless deploy --config "./serverless.yml" --stage dev -v

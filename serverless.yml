@@ -61,15 +61,15 @@ package:
   artifact: .build/lambda/Lambda/lambda.zip
 
 functions:
-  hello:
-    handler: handler.hello
+  lambda:
+    handler: handler.lambda
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
     events:
       - http:
           path: /
-          method: get
+          method: post
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
