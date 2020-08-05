@@ -6,10 +6,14 @@
 
 This project is a starting point for writing an HTTP service in Swift. It contains configuration files and scripts to fully automate deploying to AWS in a matter of seconds using the Serverless Framework. It is based on samples and documentation from [swift-server/swift-aws-lambda-runtime](https://github.com/swift-server/swift-aws-lambda-runtime)
 
+Built with 💘 by the folks @ [Stream](https://getstream.io).
+
 <img align="right" src="https://i.imgur.com/dSz1pYT.png" width="55%" />
 <img align="right" src="https://i.imgur.com/FocTSMk.png" width="55%" />
 
-Built with 💘 by the folks @ [Stream](https://getstream.io).
+## 🤖 Chatbot Sample
+
+In the [Samples](Samples) folder you can find a Chatbot sample built from this tutorial: [Write a Chatbot in Swift and Deploy to AWS Lambda](https://getstream.io/blog/swift-lambda-chat-bot/)
 
 ## ⚙️ Getting started
 
