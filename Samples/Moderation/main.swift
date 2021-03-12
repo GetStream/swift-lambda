@@ -7,6 +7,26 @@ import Foundation
 import FoundationNetworking
 #endif
 
+Lambda.run { (context: Lambda.Context, event: APIGateway.Request, callback: @escaping (Result<APIGateway.Response, Error>) -> Void) in
+    guard
+        let data = event.body?.data(using: .utf8),
+        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+        var message = json["message"] as? [String: Any]
+    else {
+        callback(.success(APIGateway.Response(statusCode: .ok)))
+        return
+    }
+    
+    // rewrite message's text with redacted version
+    message["text"] = redactCreditCardNumbers(from: text)
+    
+    let body = ["message": message]
+    let bodyData = try! JSONSerialization.data(withJSONObject: body)
+    let string = String(data: bodyData, encoding: .utf8)
+    
+    callback(.success(APIGateway.Response(statusCode: .ok, body: string)))
+}
+
 func redactCreditCardNumbers(from text: String) -> String {
     var text = text
     
@@ -25,29 +45,11 @@ func redactCreditCardNumbers(from text: String) -> String {
     let res = regex.matches(in: text, options: [], range: NSRange(location: 0, length: text.count))
 
     res.forEach {
-        text = text.replacingCharacters(in: Range($0.range, in: text)!, with: String(repeating: "*", count: $0.range.length))
+        text = text.replacingCharacters(
+            in: Range($0.range, in: text)!,
+            with: String(repeating: "*", count: $0.range.length)
+        )
     }
     
     return text
-}
-
-Lambda.run { (context: Lambda.Context, event: APIGateway.Request, callback: @escaping (Result<APIGateway.Response, Error>) -> Void) in
-    guard
-        let data = event.body?.data(using: .utf8),
-        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-        var message = json["message"] as? [String: Any],
-        let text = message["text"] as? String
-    else {
-        callback(.success(APIGateway.Response(statusCode: .ok)))
-        return
-    }
-    
-    // rewrite message's text with redacted version
-    message["text"] = redactCreditCardNumbers(from: text)
-    
-    let body = ["message": message]
-    let bodyData = try! JSONSerialization.data(withJSONObject: body)
-    let string = String(data: bodyData, encoding: .utf8)
-    
-    callback(.success(APIGateway.Response(statusCode: .ok, body: string)))
 }

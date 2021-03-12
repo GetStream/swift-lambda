@@ -1,0 +1,4 @@
+module CBacktrace {
+    umbrella "/Users/cardoso/dev/getstream/swift-lambda/.build/checkouts/swift-backtrace/Sources/CBacktrace/include"
+    export *
+}

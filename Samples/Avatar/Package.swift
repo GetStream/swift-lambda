@@ -11,13 +11,13 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-server/swift-aws-lambda-runtime.git", from: "0.2.0"),
-        .package(name: "SwiftJWT", url: "https://github.com/Kitura/Swift-JWT.git", from: "3.6.2")
+        .package(url: "https://github.com/twostraws/SwiftGD.git", from: "2.5.0")
     ],
     targets: [
         .target(name: "Lambda", dependencies: [
             .product(name: "AWSLambdaRuntime", package: "swift-aws-lambda-runtime"),
             .product(name: "AWSLambdaEvents", package: "swift-aws-lambda-runtime"),
-            "SwiftJWT"
+            .product(name: "SwiftGD", package: "SwiftGD")
         ])
     ]
 )
